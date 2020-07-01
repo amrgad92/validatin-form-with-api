@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <style>
+        body{
+
+            height: 5000px;
+        }
+    </style>
+</head>
+<body>
+    <div id="particles-js" ></div>
+    <nav class="navbar navbar-expand-sm navbar-link bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"> Navbar</a>
+            <button class="navbar-toggler d-lg-none" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavId">
+    
+                <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+    
+                    <li class="nav-item">
+                        <a class="nav-link" href="file:///D:/html%20css%20projects/task/index.html"><h6>sign up</h6></a>
+                    </li>
+    
+    
+                </ul>
+    
+            </div>
+        </div>
+    </nav>
+
+        <div class="container w-25 mt-4 py-3 rounded-lg wrapper">
+            <div class="form-group">
+                <form id="form" action="" class="w-75 m-auto">
+                    <label for="" class="mt-2">Full name</label>
+                    <input id="name" name="full_name" type="text" class="form-control" required>
+                    
+                    <label for="" class="mt-2">Email</label>
+                    <input id="email" name="email" type="email" class="form-control" required>
+        
+                    <label for="" class="mt-2">Gender</label>
+                    <br>
+    
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="inlineRadio1" value="male" checked required>
+                        <label class="form-check-label" for="inlineRadio1">Male</label>
+                      </div>
+                      <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="gender" id="inlineRadio2" value="female" required>
+                        <label class="form-check-label" for="inlineRadio2">Female</label>
+                      </div>
+                    <br>
+                    
+                    <label for="" class="mt-2">Birthdate</label>
+                    <input id="date" name="birthdate" type="date" class="form-control" required>
+                    
+                    <label for="" class="mt-2">Phone number</label>
+                    <input id="phone" name="phone_number" type="number" class="form-control" required>
+        
+                    <label for="" class="mt-2">Marital status</label>
+                    <!-- <input type="text" class="form-control" required> -->
+                    <select  name="marital_status" class="custom-select mr-sm-2"  required>
+                        <option selected >Choose...</option>
+                        <option value="married">married</option>
+                        <option value="single">single</option>
+                        <option value="divorced">divorced</option>
+                        <option value="widowed">widowed</option>
+                      </select>
+                    <button id="btn" onclick="SubmitForm()" type="button" class="btn btn-danger mt-2">submit</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="container text-center">
+            <table class="table table-hover table-bordered mt-5">
+                <thead class="table text-center">
+                    <th>name</th>
+                    <th>email</th>
+                    <th>gender</th>
+                    <th>date</th>
+                    <th>phone</th>
+                    <th>marital status</th>
+                </thead>
+                <tbody id="tbl_body">
+
+                </tbody>
+            </table>
+        </div>
+
+    <script type="text/javascript" src="js/particles.min.js"></script>
+    <script type="text/javascript" src="js/app.js"></script>
+    <script src="js/jquery-3.5.0.min.js"></script>
+    <!-- <script src="js/jquery-3.2.1.slim.min.js"></script> -->
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/index.js"></script>
+</body>
+</html>

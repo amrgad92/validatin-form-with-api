@@ -1,0 +1,23 @@
+body
+{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+#particles-js
+{
+    background-image: url('6acce6ae7b893332c73fb9a9c82744da.jpg');
+    background-size: 100% 100%;
+}
+.wrapper
+{
+    background-color: rgba(223, 210, 210, 0.541);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+}
+#notFound
+{
+    display: none;
+}
